@@ -2,6 +2,8 @@ import React from "react";
 import LikeCounter from "./components/LikeCounter";
 import Title from "./components/Title";
 import LikeButton from "./components/LikeButton";
+import ArticleList from "./components/ArticleList";
+import ArticleCard from "./components/ArticleCard";
 
 function App() {
   return (
@@ -17,6 +19,10 @@ function App() {
         </p>
         <p>
           <LikeButton />
+        </p>
+        <p>
+          <ArticleCard />
+          <ArticleList />
         </p>
       </body>
     </div>

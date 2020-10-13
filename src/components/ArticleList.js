@@ -1,6 +1,5 @@
 // src/components/ArticleList.js
 import React, { useState } from "react";
-import Timeout from "await-timeout";
 
 export default function ArticleList() {
   const [articles, set_articles] = useState([
@@ -26,13 +25,17 @@ export default function ArticleList() {
   return (
     <div>
       <p>Here's a lovely list of articles, for your reading pleasure:</p>
-      <ul>
-        <li>
-          {articles.map((article) => {
-            return article.title;
-          })}
-        </li>
-      </ul>
+      <p>
+        {articles.map((article) => {
+          return (
+            <ul>
+              <li>id={article.id}</li>
+              <li>title={article.title}</li>
+              <li>body={article.body}</li>
+            </ul>
+          );
+        })}
+      </p>
     </div>
   );
 }

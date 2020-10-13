@@ -21,7 +21,6 @@ function App() {
           <LikeButton />
         </p>
         <p>
-          <ArticleCard />
           <ArticleList />
         </p>
       </body>
